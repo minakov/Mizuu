@@ -25,9 +25,20 @@ Since Mizuu was just recently open-sourced, there's still some work to do with b
 Setup
 -----
 
-Mizuu is developed using ADT. I will most likely convert the project to the upcoming Android Studio environment in the future.
+Mizuu is developed using Android Studio and is built with Java 1.7.
 
+In order to use the project with the various web services, you'll need to add an `api_keys.xml` file to `/res/values/` with the following content:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tmdb_api_key">add_your_own</string>
+    <string name="tvdb_api_key">add_your_own</string>
+    <string name="youtube_api_key">add_your_own</string>
+    <string name="trakt_api_key">add_your_own</string>
+</resources>
+```
 
  [1]: https://github.com/MizzleDK/Mizuu/fork
- [2]: https://github.com/MizzleDK/MizuuApp/issues
+ [2]: https://github.com/MizzleDK/Mizuu/issues
  [3]: http://translate.mizuu.tv/
